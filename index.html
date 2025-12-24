@@ -6,35 +6,101 @@
   <title>Zamdav | Tech Solutions</title>
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #f0fff4;
-      color: #1a202c;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      background-color: #2f855a;
-      color: white;
-      padding: 1rem 2rem;
-    }
-    header img {
-      height: 60px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #38a169;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      transition: background 0.3s;
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="Zamdav Logo" />
+    <div>
+      <h1 style="margin: 0;">Zamdav</h1>
+      <p style="margin: 0;">Tech Solutions for a Connected World</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+<nav>
+  <a href="#" onclick="showHome()">Home</a>
+  <a href="#" onclick="showServices()">Services</a>
+  <a href="#" onclick="showAbout()">About</a>
+  <a href="#" onclick="showContact()">Contact</a>
+</nav>
+  
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Your Partner in Digital Transformation</h2>
+    <p>We build scalable, secure, and beautiful solutions for both local and global audiences.</p>
+    <button class="btn" onclick="showServices()">Explore Services</button>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Custom websites, dashboards, and portals built with modern tech and responsive design.</p>
+      </div>
+      <div class="service-card">
+        <h3>Firebase Integration</h3>
+        <p>Real-time databases, secure authentication, and scalable backend solutions for your apps.</p>
+      </div>
+      <div class="service-card">
+        <h3>UI/UX Design</h3>
+        <p>Beautiful interfaces, dynamic navigation, and branding that makes your product shine.</p>
+      </div>
+      <div class="service-card">
+        <h3>Domain & Hosting Setup</h3>
+        <p>Affordable deployment with HTTPS, DNS configuration, and global accessibility.</p>
+      </div>
+      <div class="service-card">
+        <h3>Payment Integration</h3>
+        <p>Local and global payment systems including MTN MoMo, Mastercard, and Stripe.</p>
+      </div>
+    </div>
+    <button class="btn" onclick="showHome()">Back to Home</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Zamdav</h2>
+    <p>Zamdav is a visionary tech solutions company dedicated to creating meaningful digital experiences.</p>
+    <p><strong style="color: green;">Created by TWINOMUJUNI LEOPOLD</strong></p>
+    
+    <img src="leopro.jpg" width="50%"alt="his pic">
+    <p>
+      A versatile digital creator, web specialist, and Android Developer.
+    </p>
+    <button class="btn" onclick="showHome()">Back to Home</button>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="mailto:leocyberpro@hotmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button class="btn" type="submit">Send</button>
+  </form>
+  <button class="btn" onclick="showHome()">Back to Home</button>
+  <p>Or reach us directly on WhatsApp:</p>
+<a href="https://wa.me/256768034548" target="_blank" class="whatsapp-btn">
+  💬 Chat on WhatsApp
+</a>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Zamdav.xyz All rights reserved.</p>
+  </footer>
+
+  <!-- Script for Dynamic Navigation -->
+  <script src="script.js"></script>
+</body>
+</html>      transition: background 0.3s;
     }
     nav a:hover {
       background-color: #2f855a;
